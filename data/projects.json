@@ -1,0 +1,50 @@
+[
+    {
+        "title": "ATLAS",
+        "description": "AI-native consulting platform for startups &amp; MSMEs powered by multi-agent AI. 3rd place at DTU BrAInwave 2.0.",
+        "imageUrl": "assets/images/project-cover/atlas.webp",
+        "link": "https://atlas-kappa-two.vercel.app"
+    },
+    {
+        "title": "InnerBloom",
+        "description": "Mental wellness platform for teens with a RAG chatbot &amp; rPPG stress detection. 8th at HackWithIndia.",
+        "imageUrl": "assets/images/project-cover/innerbloom.webp",
+        "link": "https://github.com/samartharora25/InnerBloomFinal"
+    },
+    {
+        "title": "DMRC HRMS Chatbot",
+        "description": "RAG-based HR assistant for 15,000+ Delhi Metro employees built with LangChain, ChromaDB &amp; Groq.",
+        "imageUrl": "assets/images/project-cover/hrms.webp",
+        "link": "https://github.com/samartharora25/Delhi-Metro-Rail-Organization-HRMS-Chatbot"
+    },
+    {
+        "title": "DMRC Attendance App",
+        "description": "Flutter app for contactless attendance using facial recognition and geofencing.",
+        "imageUrl": "assets/images/project-cover/attendance.webp",
+        "link": "https://github.com/samartharora25/Delhi-Metro-Rail-Organisation-Atttendance-Application"
+    },
+    {
+        "title": "HCL Onboarding Assistant",
+        "description": "Hybrid RAG chatbot helping new joiners set up their work environment, with source citations.",
+        "imageUrl": "assets/images/project-cover/onboarding.webp",
+        "link": "https://hcl-onboarding-chatbot.onrender.com"
+    },
+    {
+        "title": "HCL Account Mining",
+        "description": "AI web app that classifies, scores &amp; ranks workplace pain points using Gemini structured output.",
+        "imageUrl": "assets/images/project-cover/mining.webp",
+        "link": "https://hcl-account-mining.vercel.app"
+    },
+    {
+        "title": "Dynamic Parking Pricing",
+        "description": "Real-time dynamic pricing model for urban parking lots. Capstone project of Summer Analytics 2025.",
+        "imageUrl": "assets/images/project-cover/parking.webp",
+        "link": "https://github.com/samartharora25/Dynamic-Pricing-for-Urban-Parking-Lots-Capstone-Project-of-Summer-Analytics-2025"
+    },
+    {
+        "title": "The Daily Binge",
+        "description": "Content-based movie recommendation system built with Python.",
+        "imageUrl": "assets/images/project-cover/binge.webp",
+        "link": "https://github.com/samartharora25/The-Daily-Binge"
+    }
+]
