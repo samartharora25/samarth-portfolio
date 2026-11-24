@@ -28,6 +28,15 @@ function vibrateOnMobile(t = [20]) {
 function toggleTheme() {
   vibrateOnMobile([10]);
 
+  const lamp = document.getElementById("theme-toggle");
+  lamp.classList.remove("pull");
+  void lamp.getBoundingClientRect();
+  lamp.classList.add("pull");
+  setTimeout(switchTheme, 250);
+}
+
+function switchTheme() {
+
   const theme = document.documentElement.getAttribute("data-theme");
   const newTheme = theme === "dark" ? "light" : "dark";
   const toggleRays = document.getElementById("theme-toggle-rays");

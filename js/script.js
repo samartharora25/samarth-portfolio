@@ -4,7 +4,7 @@ import {
   initCopyEmail,
   isNotMobileDevice,
   updateGreeting,
-} from "./modules/utils.js?v=2";
+} from "./modules/utils.js?v=4";
 
 document.addEventListener("DOMContentLoaded", async () => {
   if (isNotMobileDevice) initCustomCursor();

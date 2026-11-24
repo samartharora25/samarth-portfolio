@@ -1109,3 +1109,15 @@ strong {
 #logo {
     overflow: visible;
 }
+
+#theme-toggle.pull {
+    animation: lamp-pull 800ms cubic-bezier(0.3, 0.7, 0.4, 1);
+}
+
+@keyframes lamp-pull {
+    0% { transform: translateY(0); }
+    30% { transform: translateY(24px); }
+    55% { transform: translateY(-6px); }
+    75% { transform: translateY(3px); }
+    100% { transform: translateY(0); }
+}
