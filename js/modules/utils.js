@@ -1,8 +1,6 @@
 import { handleMouseLeave } from "./cursor.js";
 
 const email = "samarth.arora7official@gmail.com";
-const birthYear = 2005;
-const currentYear = new Date().getFullYear();
 const isMobileDevice =
   /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
     navigator.userAgent
@@ -13,50 +11,13 @@ const copyButton = document.querySelector(".copy");
 const copyIcon = document.querySelector(".copy-icon");
 
 
-const url = "https://cors-proxy-og.vercel.app/api";
-
-// Function to fetch location data
-const updateGreeting = async () => {
-  const greetingGreet = document.querySelector(".greeting-greet");
-  const greetingLine = document.querySelector(".greeting-line");
-  const loadingScreen = document.querySelector(".loading-screen");
+const updateGreeting = () => {
+  document.querySelector(".greeting-greet").textContent = "Hello, I am";
+  document.querySelector(".loading-screen").remove();
   const mainContainer = document.querySelector(".main-container");
-
-  // Default greeting and city in case of failure or empty response
-  const defaultGreeting = "Hello";
-  const defaultCity = "Heaven";
-
-  try {
-    const response = await fetch(url);
-    if (!response.ok)
-      throw new Error(`Request failed with status ${response.status}`);
-    const data = await response.json();
-
-    // Use fetched data or default values if unavailable
-    const greeting = data.greeting || defaultGreeting;
-    const city = data.city || defaultCity;
-
-    // Update the greeting and line text
-    greetingGreet.textContent = `${greeting}, I am`;
-    greetingLine.innerHTML = `...is it fate or Wi-Fi that <br> brought you here from ${city}?`;
-  } catch (error) {
-    console.error("Error fetching location:", error);
-
-    // Fallback greeting if fetch fails
-    greetingGreet.textContent = `${defaultGreeting}, I am`;
-    greetingLine.innerHTML = `...is it just me, or does <br>${defaultCity} seem extra cool today?`;
-  } finally {
-    // Hide loading screen and reveal main content
-    loadingScreen.remove();
-    mainContainer.style.visibility = "visible";
-    mainContainer.style.opacity = 1;
-  }
+  mainContainer.style.visibility = "visible";
+  mainContainer.style.opacity = 1;
 };
-
-function initAge() {
-  const ageInYears = currentYear - birthYear;
-  document.querySelector(".age-display").textContent = ageInYears;
-}
 
 function vibrateOnMobile(t = [20]) {
   if (isMobileDevice) {
@@ -206,7 +167,6 @@ export {
   isNotMobileDevice,
   updateGreeting,
   toggleTheme,
-  initAge,
   isInScrollableContainer,
   updateProgressBar,
   isAtScrollableExtremes,

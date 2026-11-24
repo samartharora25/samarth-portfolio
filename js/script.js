@@ -3,14 +3,12 @@ import { initCustomCursor } from "./modules/cursor.js";
 import {
   initCopyEmail,
   isNotMobileDevice,
-  initAge,
   updateGreeting,
 } from "./modules/utils.js";
 
 document.addEventListener("DOMContentLoaded", async () => {
   if (isNotMobileDevice) initCustomCursor();
-  await updateGreeting();
+  updateGreeting();
   initNavigation();
-  initAge();
   initCopyEmail();
 });
