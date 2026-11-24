@@ -8,7 +8,7 @@ import {
   isAtScrollableExtremes,
   vibrateOnMobile,
   clearSelection,
-} from "./utils.js?v=4";
+} from "./utils.js?v=5";
 
 import { resetCursorStyle } from "./cursor.js";
 

@@ -52,8 +52,8 @@ function switchTheme() {
 
   // Update cursor trail content for non-mobile devices
   if (isNotMobileDevice) {
-    document.querySelector(".cursor-trail.lamp-view").textContent =
-      theme?.toUpperCase() || "";
+    const lampTrail = document.querySelector(".cursor-trail.lamp-view");
+    if (lampTrail) lampTrail.textContent = theme?.toUpperCase() || "";
   }
 }
 
