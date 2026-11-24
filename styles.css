@@ -899,17 +899,6 @@ strong {
 
 
 
-.footer-text {
-    /* ON: under construction */
-    display: none;
-    position: absolute;
-    top: 24px;
-    right: -14px;
-    color: var(--secondary-color);
-    font-size: 0.8rem;
-    text-align: center;
-    transform: rotate(45deg);
-}
 
 /* Targeting devices with mouse cursor and :hover */
 @media(hover: hover) and (pointer: fine) {
@@ -995,9 +984,6 @@ strong {
         margin-bottom: 2px;
     }
 
-    .footer-text {
-        font-size: 0.8rem;
-    }
 
     .section {
         padding: 12% 8% 36% 6%;
